@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo-(0)介紹與體驗 | Program Design Notes</title>
+  <meta name="author" content="pinkpika">
+  
+  <meta name="description" content="[Hexo]：
+Hexo是基於Node.js的網誌框架，也就是本網誌的系統!目前版本2.8.0這是一位台灣的大大所寫的
+
+hexo官網連結
+作者twitter
+
+[特點]：
+官網首頁寫的
+
+A fast, simple &amp;amp; powerful blog framework, powered b">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="hexo-(0)介紹與體驗"/>
+  <meta property="og:site_name" content="Program Design Notes"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/PDNBlog/favicon.png" rel="icon">
+  <link rel="alternate" href="/PDNBlog/atom.xml" title="Program Design Notes" type="application/atom+xml">
+  <link rel="stylesheet" href="/PDNBlog/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/PDNBlog/">Program Design Notes</a></h1>
+  <h2><a href="/PDNBlog/">程式設計筆記</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      
+        <img src="https://db.tt/BfWtghsd">
+      
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-09T14:41:36.000Z"><a href="/PDNBlog/2015/01/09/hexo-0-介紹與體驗/">Jan 9 2015</a></time>
+      
+      
+  
+    <h1 class="title">hexo-(0)介紹與體驗</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h1 id="[Hexo]：">[Hexo]：</h1>
+<p>Hexo是基於Node.js的網誌框架，也就是本網誌的系統!<br>目前版本2.8.0<br>這是一位台灣的大大所寫的</p>
+<ul>
+<li><a href="http://zespia.tw/hexo/" target="_blank" rel="external">hexo官網連結</a></li>
+<li><a href="https://twitter.com/tommy351" target="_blank" rel="external">作者twitter</a></li>
+</ul>
+<h1 id="[特點]：">[特點]：</h1>
+<p>官網首頁寫的</p>
+<blockquote>
+<p>A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
+</blockquote>
+<ul>
+<li>Blazing Fast</li>
+<li>Markdown Support</li>
+<li>One-Command Deployment</li>
+<li>Various Plugins</li>
+</ul>
+<h1 id="[安裝]：">[安裝]：</h1>
+<ul>
+<li><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
+<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
+</ul>
+<h1 id="[體驗]：">[體驗]：</h1>
+<p>1.安裝hexo</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="operator"><span class="keyword">install</span> -g hexo</span></div></pre></td></tr></table></figure>
+
+<p>2.在當前目錄建一個網誌資料夾</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog &amp;&amp; <span class="built_in">cd</span> blog</div></pre></td></tr></table></figure>
+
+<p>3.移動到資料夾裡</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> blog</div></pre></td></tr></table></figure>
+
+<p>4.安裝</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="operator"><span class="keyword">install</span></span></div></pre></td></tr></table></figure>
+
+<p>5.生成檔案在public資料夾</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
+
+<p>6.在本機架伺服器(可預覽網站，網址是 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">server</span></div></pre></td></tr></table></figure>
+
+
+<h1 id="[上架到Github_Pages]：">[上架到Github Pages]：</h1>
+<p>有兩種方法</p>
+<h3 id="A-每個帳號即一個的根目錄page：">A.每個帳號即一個的根目錄page：</h3>
+<p>(生成網址是 <a href="http://你的帳號.github.io/" target="_blank" rel="external">http://你的帳號.github.io/</a>)</p>
+<p>1.創建一個repository<br>repository name為”你的帳號.github.com”</p>
+<p>2.修改網誌資料夾裡的_config.yml(修改兩個地方15,87行)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">url</span>: <span class="string">http://你的帳號.github.io/</span></div><div class="line"><span class="attribute">root</span>: <span class="string">/</span></div></pre></td></tr></table></figure>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span></div><div class="line">  repository: https:<span class="comment">//github.com/你的帳號/你的帳號.github.com.git</span></div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+
+<p>3.上傳到Github<br>輸入命令(可能需要輸入github帳密)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">hexo</span> deploy</div></pre></td></tr></table></figure>
+
+<h3 id="B-每個repository即一個的page_：">B.每個repository即一個的page ：</h3>
+<p>(生成網址是 <a href="http://你的帳號.github.io/你的repository名稱" target="_blank" rel="external">http://你的帳號.github.io/你的repository名稱</a>)</p>
+<p>1.創建一個repository<br>repository name為”任意名稱”</p>
+<p>2.修改網誌資料夾裡的_config.yml(修改兩個地方15,87行)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">url</span>: <span class="string">http://你的帳號.github.io/</span></div><div class="line"><span class="attribute">root</span>: <span class="string">/你的repository名稱/</span></div></pre></td></tr></table></figure>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span></div><div class="line">  repository: https:<span class="comment">//github.com/你的帳號/你的repository名稱.git</span></div><div class="line">  branch: gh-pages</div></pre></td></tr></table></figure>
+
+<p>3.上傳到Github<br>輸入命令(可能需要輸入github帳密)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">hexo</span> deploy</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/PDNBlog/tags/hexo/">hexo</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Comments</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://pinkpika.github.io/PDNBlog/2015/01/09/hexo-0-介紹與體驗/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:pinkpika.github.io">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/PDNBlog/tags/hexo/">hexo</a><small>1</small></li>
+  
+    <li><a href="/PDNBlog/tags/前言/">前言</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 pinkpika
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/PDNBlog/js/jquery.imagesloaded.min.js"></script>
+<script src="/PDNBlog/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'pinkpikapdnblog';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/PDNBlog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/PDNBlog/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
