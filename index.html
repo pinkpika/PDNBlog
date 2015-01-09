@@ -116,69 +116,15 @@
 <li><a href="http://zespia.tw/hexo/" target="_blank" rel="external">hexo官網連結</a></li>
 <li><a href="https://twitter.com/tommy351" target="_blank" rel="external">作者twitter</a></li>
 </ul>
-<h1 id="[特點]：">[特點]：</h1>
-<p>官網首頁寫的</p>
-<blockquote>
-<p>A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
-</blockquote>
-<ul>
-<li>Blazing Fast</li>
-<li>Markdown Support</li>
-<li>One-Command Deployment</li>
-<li>Various Plugins</li>
-</ul>
-<h1 id="[安裝]：">[安裝]：</h1>
-<ul>
-<li><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
-<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
-</ul>
-<h1 id="[體驗]：">[體驗]：</h1>
-<p>1.安裝hexo</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="operator"><span class="keyword">install</span> -g hexo</span></div></pre></td></tr></table></figure>
 
-<p>2.在當前目錄建一個網誌資料夾</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog &amp;&amp; <span class="built_in">cd</span> blog</div></pre></td></tr></table></figure>
-
-<p>3.移動到資料夾裡</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> blog</div></pre></td></tr></table></figure>
-
-<p>4.安裝</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="operator"><span class="keyword">install</span></span></div></pre></td></tr></table></figure>
-
-<p>5.生成檔案在public資料夾</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
-
-<p>6.在本機架伺服器(可預覽網站，網址是 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>)</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">server</span></div></pre></td></tr></table></figure>
-
-
-<h1 id="[上架到Github_Pages]：">[上架到Github Pages]：</h1>
-<p>有兩種方法</p>
-<h3 id="A-每個帳號即一個的根目錄page：">A.每個帳號即一個的根目錄page：</h3>
-<p>(生成網址是 <a href="http://你的帳號.github.io/" target="_blank" rel="external">http://你的帳號.github.io/</a>)</p>
-<p>1.創建一個repository<br>repository name為”你的帳號.github.com”</p>
-<p>2.修改網誌資料夾裡的_config.yml(修改兩個地方15,87行)</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">url</span>: <span class="string">http://你的帳號.github.io/</span></div><div class="line"><span class="attribute">root</span>: <span class="string">/</span></div></pre></td></tr></table></figure>
-
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span></div><div class="line">  repository: https:<span class="comment">//github.com/你的帳號/你的帳號.github.com.git</span></div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-
-<p>3.上傳到Github<br>輸入命令(可能需要輸入github帳密)</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">hexo</span> deploy</div></pre></td></tr></table></figure>
-
-<h3 id="B-每個repository即一個的page_：">B.每個repository即一個的page ：</h3>
-<p>(生成網址是 <a href="http://你的帳號.github.io/你的repository名稱" target="_blank" rel="external">http://你的帳號.github.io/你的repository名稱</a>)</p>
-<p>1.創建一個repository<br>repository name為”任意名稱”</p>
-<p>2.修改網誌資料夾裡的_config.yml(修改兩個地方15,87行)</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">url</span>: <span class="string">http://你的帳號.github.io/</span></div><div class="line"><span class="attribute">root</span>: <span class="string">/你的repository名稱/</span></div></pre></td></tr></table></figure>
-
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span></div><div class="line">  repository: https:<span class="comment">//github.com/你的帳號/你的repository名稱.git</span></div><div class="line">  branch: gh-pages</div></pre></td></tr></table></figure>
-
-<p>3.上傳到Github<br>輸入命令(可能需要輸入github帳密)</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">hexo</span> deploy</div></pre></td></tr></table></figure>
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/PDNBlog/2015/01/09/hexo-0-介紹與體驗/#more" class="more-link">Read More</a>
+          </div>
         
         
       

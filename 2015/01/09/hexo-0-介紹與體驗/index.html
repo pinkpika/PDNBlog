@@ -10,12 +10,7 @@
 Hexo是基於Node.js的網誌框架，也就是本網誌的系統!目前版本2.8.0這是一位台灣的大大所寫的
 
 hexo官網連結
-作者twitter
-
-[特點]：
-官網首頁寫的
-
-A fast, simple &amp;amp; powerful blog framework, powered b">
+作者twitter">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -89,6 +84,8 @@ A fast, simple &amp;amp; powerful blog framework, powered b">
 <li><a href="http://zespia.tw/hexo/" target="_blank" rel="external">hexo官網連結</a></li>
 <li><a href="https://twitter.com/tommy351" target="_blank" rel="external">作者twitter</a></li>
 </ul>
+<a id="more"></a>
+
 <h1 id="[特點]：">[特點]：</h1>
 <p>官網首頁寫的</p>
 <blockquote>
@@ -133,7 +130,7 @@ A fast, simple &amp;amp; powerful blog framework, powered b">
 <p>2.修改網誌資料夾裡的_config.yml(修改兩個地方15,87行)</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">url</span>: <span class="string">http://你的帳號.github.io/</span></div><div class="line"><span class="attribute">root</span>: <span class="string">/</span></div></pre></td></tr></table></figure>
 
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span></div><div class="line">  repository: https:<span class="comment">//github.com/你的帳號/你的帳號.github.com.git</span></div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="class"><span class="keyword">type</span>: <span class="title">git</span></span></div><div class="line">  repo:</div><div class="line">    github: https:<span class="comment">//github.com/你的帳號/你的帳號.github.com.git,master</span></div></pre></td></tr></table></figure>
 
 <p>3.上傳到Github<br>輸入命令(可能需要輸入github帳密)</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">hexo</span> deploy</div></pre></td></tr></table></figure>
@@ -144,7 +141,7 @@ A fast, simple &amp;amp; powerful blog framework, powered b">
 <p>2.修改網誌資料夾裡的_config.yml(修改兩個地方15,87行)</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">url</span>: <span class="string">http://你的帳號.github.io/</span></div><div class="line"><span class="attribute">root</span>: <span class="string">/你的repository名稱/</span></div></pre></td></tr></table></figure>
 
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span></div><div class="line">  repository: https:<span class="comment">//github.com/你的帳號/你的repository名稱.git</span></div><div class="line">  branch: gh-pages</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="class"><span class="keyword">type</span>: <span class="title">git</span></span></div><div class="line">  repo:</div><div class="line">    github: https:<span class="comment">//github.com/你的帳號/你的repository名稱.git,gh-pages</span></div></pre></td></tr></table></figure>
 
 <p>3.上傳到Github<br>輸入命令(可能需要輸入github帳密)</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">hexo</span> deploy</div></pre></td></tr></table></figure>
