@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015 | Program Design Notes</title>
+  <title>Git-(0)基本指令 | Program Design Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Program Design Notes">
-<meta property="og:url" content="http://pinkpika.github.io/PDNBlog/archives/2015/">
+  <meta name="description" content="[簡單流程]:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git-(0)基本指令">
+<meta property="og:url" content="http://pinkpika.github.io/PDNBlog/2015/01/12/Git-0-基本指令/">
 <meta property="og:site_name" content="Program Design Notes">
-<meta property="og:description">
+<meta property="og:description" content="[簡單流程]:">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Program Design Notes">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Git-(0)基本指令">
+<meta name="twitter:description" content="[簡單流程]:">
 
   
     <link rel="alternative" href="/atom.xml" title="Program Design Notes" type="application/atom+xml">
@@ -65,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Git-0-基本指令" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Git-0-基本指令" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/PDNBlog/2015/01/12/Git-0-基本指令/" class="article-date">
   <time datetime="2015-01-12T07:10:59.000Z" itemprop="datePublished">Jan 12 2015</time>
@@ -84,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/PDNBlog/2015/01/12/Git-0-基本指令/">Git-(0)基本指令</a>
+    <h1 class="article-title" itemprop="name">
+      Git-(0)基本指令
     </h1>
   
 
@@ -94,12 +92,27 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="[簡單流程]:">[簡單流程]:</h2>
+<a id="more"></a>
 
-        
-          <p class="article-more-link">
-            <a href="/PDNBlog/2015/01/12/Git-0-基本指令/#more">Read More</a>
-          </p>
-        
+<p>1.把Github上的code</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">git</span> <span class="tag">clone</span> <span class="attr_selector">[repository]</span> </div></pre></td></tr></table></figure>
+
+<p>2.進到該目錄中</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch <span class="attr_selector">[branch_name]</span> <span class="comment">//新branch</span></div><div class="line">git checkout <span class="attr_selector">[branch_name]</span> <span class="comment">//切換branch</span></div></pre></td></tr></table></figure>
+
+<p>3.開始修改檔案(重複動作，直到 git status 顯示無修改)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git status<span class="comment"> //看狀態</span></div><div class="line">git <span class="built_in">add</span> [file_name]<span class="comment"> //加入檔案[git add . (加入全部)]</span></div><div class="line">git commit -m <span class="string">"message"</span><span class="comment"> //註解</span></div></pre></td></tr></table></figure>
+
+<p>4.準備上傳</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git checkout master <span class="comment">//切換到master</span></div><div class="line">git merge [branch_name] <span class="comment">//和master merge起來</span></div><div class="line">git <span class="keyword">push</span> <span class="comment">//上傳</span></div><div class="line"><span class="comment">/*git push origin master (第一次push到空repo需要加origin)*/</span></div></pre></td></tr></table></figure>
+
+<p>註：當然偷懶一下也是可以不要生成新branch，就不用marge，直接修改master的說。</p>
+<h2 id="[其他實用指令]:">[其他實用指令]:</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git log <span class="comment">//顯示提交的歷史記錄</span></div><div class="line">git commit --amend <span class="comment">//更動最後一筆更新</span></div><div class="line">git rm filename <span class="comment">//刪除檔案</span></div><div class="line">git reset <span class="tag">HEAD</span> <span class="attr_selector">[file_name]</span> <span class="comment">//取消已被暫存的檔案</span></div><div class="line">git checkout -- <span class="attr_selector">[file_name]</span> <span class="comment">//復原已被更動的檔案</span></div><div class="line">git reset --hard <span class="tag">HEAD</span> <span class="comment">//還原到第一版本</span></div></pre></td></tr></table></figure>
+
+
+<p>參考網站：<br><a href="http://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B" target="_blank" rel="external">Git官方教學</a><br><a href="http://blog.longwin.com.tw/2009/05/git-learn-initial-command-2009/" target="_blank" rel="external">Tsung’s Blog Git 初學筆記 - 指令操作教學</a></p>
+
       
     </div>
     <footer class="article-footer">
@@ -113,122 +126,26 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-前言" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/PDNBlog/2015/01/09/前言/" class="article-date">
-  <time datetime="2015-01-09T15:09:04.000Z" itemprop="datePublished">Jan 9 2015</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/PDNBlog/2015/01/09/前言/">前言</a>
-    </h1>
+    <a href="/PDNBlog/2015/01/09/前言/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">前言</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本部落格是用來做甚麼的?</p>
-
-        
-          <p class="article-more-link">
-            <a href="/PDNBlog/2015/01/09/前言/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://pinkpika.github.io/2015/01/09/前言/" data-id="7nxybal9z074sg03" class="article-share-link">Share</a>
-      
-        <a href="http://pinkpika.github.io/2015/01/09/前言/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/PDNBlog/tags/前言/">前言</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 
-  
-    <article id="post-Hexo-0-介紹與體驗" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/PDNBlog/2015/01/09/Hexo-0-介紹與體驗/" class="article-date">
-  <time datetime="2015-01-09T14:41:36.000Z" itemprop="datePublished">Jan 9 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/PDNBlog/categories/Hexo/">Hexo</a>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-
-  </div>
-  <div class="article-inner">
-    
-<div class="article-gallery">
-  <div class="article-gallery-photos">
-    
-      <a class="article-gallery-img fancybox" href="https://dl.dropboxusercontent.com/u/15604170/pinkpika_website/pdnblog/hexo/20130928.PNG" rel="gallery_bacfv045c5npewur">
-        <img src="https://dl.dropboxusercontent.com/u/15604170/pinkpika_website/pdnblog/hexo/20130928.PNG" itemprop="image">
-      </a>
-    
-  </div>
-</div>
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/PDNBlog/2015/01/09/Hexo-0-介紹與體驗/">Hexo-(0)介紹與體驗</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="[Hexo]：">[Hexo]：</h2>
-<p>Hexo是基於Node.js的網誌框架，也就是本網誌的系統!<br>目前版本2.8.0<br>這是一位台灣的大大所寫的</p>
-<ul>
-<li><a href="http://zespia.tw/hexo/" target="_blank" rel="external">hexo官網連結</a></li>
-<li><a href="https://twitter.com/tommy351" target="_blank" rel="external">作者twitter</a></li>
-</ul>
-
-        
-          <p class="article-more-link">
-            <a href="/PDNBlog/2015/01/09/Hexo-0-介紹與體驗/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://pinkpika.github.io/2015/01/09/Hexo-0-介紹與體驗/" data-id="bacfv045c5npewur" class="article-share-link">Share</a>
-      
-        <a href="http://pinkpika.github.io/2015/01/09/Hexo-0-介紹與體驗/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/PDNBlog/tags/Hexo/">Hexo</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
+</section>
 </section>
         
           <aside id="sidebar">
@@ -316,11 +233,13 @@
 <script>
   var disqus_shortname = 'pinkpikapdnblog';
   
+  var disqus_url = 'http://pinkpika.github.io/2015/01/12/Git-0-基本指令/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
