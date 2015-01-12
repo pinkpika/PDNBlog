@@ -5,24 +5,15 @@
   
   <title>Hexo-(1)常見問題 | Program Design Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="這邊記錄了一些使用Hexo時我遇到的問題
-[Git環境設置錯誤]
-顯示問題：
-1234567[info] Start deploying: git[info] Setting up Git deployment...[error] Error: spawn ENOENTError: spawn ENOENT    at errnoException (child_process.js:1000:1">
+  <meta name="description" content="這邊記錄了一些使用Hexo時我遇到的問題。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-(1)常見問題">
 <meta property="og:url" content="http://pinkpika.github.io/PDNBlog/2015/01/12/Hexo-1-常見問題/">
 <meta property="og:site_name" content="Program Design Notes">
-<meta property="og:description" content="這邊記錄了一些使用Hexo時我遇到的問題
-[Git環境設置錯誤]
-顯示問題：
-1234567[info] Start deploying: git[info] Setting up Git deployment...[error] Error: spawn ENOENTError: spawn ENOENT    at errnoException (child_process.js:1000:1">
+<meta property="og:description" content="這邊記錄了一些使用Hexo時我遇到的問題。">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-(1)常見問題">
-<meta name="twitter:description" content="這邊記錄了一些使用Hexo時我遇到的問題
-[Git環境設置錯誤]
-顯示問題：
-1234567[info] Start deploying: git[info] Setting up Git deployment...[error] Error: spawn ENOENTError: spawn ENOENT    at errnoException (child_process.js:1000:1">
+<meta name="twitter:description" content="這邊記錄了一些使用Hexo時我遇到的問題。">
 
   
     <link rel="alternative" href="/atom.xml" title="Program Design Notes" type="application/atom+xml">
@@ -100,15 +91,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>這邊記錄了一些使用Hexo時我遇到的問題</p>
-<h3 id="[Git環境設置錯誤]">[Git環境設置錯誤]</h3>
+        <p>這邊記錄了一些使用Hexo時我遇到的問題。</p>
+<a id="more"></a>
+
+<h3 id="[Git環境設置錯誤]：">[Git環境設置錯誤]：</h3>
 <p>顯示問題：</p>
-<p><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="attr_selector">[info]</span> <span class="tag">Start</span> <span class="tag">deploying</span>: <span class="tag">git</span></div><div class="line"><span class="attr_selector">[info]</span> <span class="tag">Setting</span> <span class="tag">up</span> <span class="tag">Git</span> <span class="tag">deployment</span>...</div><div class="line"><span class="attr_selector">[error]</span> <span class="tag">Error</span>: <span class="tag">spawn</span> <span class="tag">ENOENT</span></div><div class="line"><span class="tag">Error</span>: <span class="tag">spawn</span> <span class="tag">ENOENT</span></div><div class="line">    <span class="tag">at</span> <span class="tag">errnoException</span> (<span class="tag">child_process</span><span class="class">.js</span><span class="pseudo">:1000</span><span class="pseudo">:11)</span></div><div class="line">    <span class="tag">at</span> <span class="tag">Process</span><span class="class">.ChildProcess</span><span class="class">._handle</span><span class="class">.onexit</span> (<span class="tag">child_process</span><span class="class">.js</span><span class="pseudo">:791</span><span class="pseudo">:34)</span></div><div class="line"><span class="tag">events</span><span class="class">.js</span><span class="pseudo">:72</span></div></pre></td></tr></table></figure><br>解決方法：<br>把Git Bash的Path加到系統環境變數中</p>
+<p><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="attr_selector">[info]</span> <span class="tag">Start</span> <span class="tag">deploying</span>: <span class="tag">git</span></div><div class="line"><span class="attr_selector">[info]</span> <span class="tag">Setting</span> <span class="tag">up</span> <span class="tag">Git</span> <span class="tag">deployment</span>...</div><div class="line"><span class="attr_selector">[error]</span> <span class="tag">Error</span>: <span class="tag">spawn</span> <span class="tag">ENOENT</span></div><div class="line"><span class="tag">Error</span>: <span class="tag">spawn</span> <span class="tag">ENOENT</span></div><div class="line">    <span class="tag">at</span> <span class="tag">errnoException</span> (<span class="tag">child_process</span><span class="class">.js</span><span class="pseudo">:1000</span><span class="pseudo">:11)</span></div><div class="line">    <span class="tag">at</span> <span class="tag">Process</span><span class="class">.ChildProcess</span><span class="class">._handle</span><span class="class">.onexit</span> (<span class="tag">child_process</span><span class="class">.js</span><span class="pseudo">:791</span><span class="pseudo">:34)</span></div><div class="line"><span class="tag">events</span><span class="class">.js</span><span class="pseudo">:72</span></div></pre></td></tr></table></figure><br>解決方法：<br>把Git Bash的Path加到系統環境變數中。</p>
+<h3 id="[沒有Repo]：">[沒有Repo]：</h3>
+<p><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fatal: Not <span class="operator">a</span> git repository (<span class="operator">or</span> <span class="keyword">any</span> <span class="operator">of</span> <span class="operator">the</span> parent <span class="built_in">directories</span>): .git</div></pre></td></tr></table></figure><br>解決方法：<br>rm -rf .deploy<br>hexo setup_deploy</p>
+<p>參考網站：<br><a href="http://xuanwo.org/2014/08/14/hexo-usual-problem/#%E6%9C%AC%E5%9C%B0%E6%B5%8F%E8%A7%88%E6%B2%A1%E9%97%AE%E9%A2%98%EF%BC%8CDeploy%E6%8A%A5%E9%94%99" target="_blank" rel="external">Xuanwo’s Blog</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://pinkpika.github.io/2015/01/12/Hexo-1-常見問題/" data-id="513wlspkrc6ioqd0" class="article-share-link">Share</a>
+      <a data-url="http://pinkpika.github.io/2015/01/12/Hexo-1-常見問題/" data-id="tf2jxklq6rj7w3xq" class="article-share-link">Share</a>
       
         <a href="http://pinkpika.github.io/2015/01/12/Hexo-1-常見問題/#disqus_thread" class="article-comment-link">Comments</a>
       
